@@ -4,24 +4,30 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>jQuery UI : Table</title>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
   <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/themes/smoothness/jquery-ui.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+  <script src="script.js"></script>
 </head>
 <body>
-  <table>
+  <table class="sort">
+    <thead>
     <tr>
-      <th>名前</th><th>年齢</th><th>血液型</th>
+      <th>№</th><th>名前</th><th>年齢</th><th>血液型</th>
+    </tr>
+  </thead>
+  <tbody id="sort">
+    <tr>
+      <td>1</td><td>さとう</td><td>19</td><td>A型</td>
     </tr>
     <tr>
-      <td>さとう</td><td>19</td><td>A型</td>
+      <td>2</td><td>のざわ</td><td>24</td><td>O型</td>
     </tr>
     <tr>
-      <td>のざわ</td><td>24</td><td>O型</td>
+      <td>3</td><td>まなべ</td><td>20</td><td>B型</td>
     </tr>
-    <tr>
-      <td>まなべ</td><td>20</td><td>B型</td>
-    </tr>
+  </tbody>
   </table>
 </body>
 </html>
